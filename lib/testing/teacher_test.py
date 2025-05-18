@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-from teacher import Teacher
-from user import User
+from lib.teacher import Teacher
+from lib.user import User
 
 my_teacher = Teacher("My", "Teacher")
 
@@ -22,5 +22,4 @@ class TestTeacher:
 
     def test_can_teach(self):
         '''teaches from list of knowledge.'''
-        my_teacher = Teacher("My", "Teacher")
         assert(my_teacher.teach() in my_teacher.knowledge)
